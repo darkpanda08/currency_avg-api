@@ -26,6 +26,7 @@ jobs:
     - run: npm test
 
   deploy:
+    steps:
     - uses: akhileshns/heroku-deploy@v3.10.9
       with:
         heroku_api_key: ${{secrets.HEROKU_API_KEY}}
