@@ -10,6 +10,7 @@ The API is written in NodeJS and uses Express framework. It has test cases which
 ```
 GET /?currency=<currency>&fromdate=<start_date>&todate=<end_date>
 ```
+> Note: As Heroku shuts down the aplication after 30mins of inactivity, the first request may take more time because the application has to start again.
 
 ## Query Params
 |     Param Name  |                       Description                               |
