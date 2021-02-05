@@ -33,6 +33,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - uses: actions/checkout@v2
     - name: Push to heroku 
       uses: akhileshns/heroku-deploy@v3.10.9
       with:
