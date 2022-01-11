@@ -53,7 +53,7 @@ describe('API For Average Conversion Rate', () => {
 
     it('Future To Date', (done) => {
         chai.request(app)
-            .get('/?currency=USD,CAD,GBP&fromdate=2021-02-01&todate=2021-05-02')
+            .get('/?currency=USD,CAD,GBP&fromdate=2021-02-01&todate=2085-05-02')
             .end((err, res) => {
                   res.should.have.status(422);
                   res.body.should.be.a('object');
